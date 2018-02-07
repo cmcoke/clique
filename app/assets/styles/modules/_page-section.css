@@ -1,0 +1,29 @@
+.page-section{
+  padding: 1.2rem 0;
+
+  @mixin atMedium{
+    padding: 4.5rem 0;
+  }
+
+
+  &--ghost-white{
+    background-color: $ghostWhite;
+  }
+
+  &--baby-powder{
+    background-color: $babyPowder;
+  }
+
+  &--anti-flash-white{
+    background-color: $antiFlashWhite;
+  }
+
+  &--white-smoke{
+    background-color: $whiteSmoke;
+  }
+
+  &--black{
+    background-color: $black6;
+  }
+
+}

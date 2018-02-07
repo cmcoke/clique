@@ -45,27 +45,34 @@
       <img srcset="assets/images/hero--smaller.jpg 640w, assets/images/hero--smaller-hi-dpi.jpg 1280w" alt="Friends sitting around a desk">
     </picture>
 
-    <div class="container">
+    <div class="container hero__content">
 
-      <div class="hero__phone-image">
-        <img src="assets/images/hero--image.png" alt="clique splash screen on iphone" class="flex-img">
-      </div>
+      <div class="grid align-center">
 
-      <div class="hero__text-content">
-        <h4 class="hero__top-text">Introducing</h4>
-        <h1 class="hero__middle-text">Clique</h1>
-        <h4 class="hero__bottom-text">The Social Media App</h4>
+        <div class="hero__hidden col-md-4">
+          <picture>
+            <source srcset="assets/images/hero--phone-large.png" media="(min-width: 1708px)">
+            <img src="assets/images/hero--phone-medium.png" media="(max-width: 1366px)" alt="clique splash screen on iphone">
+          </picture>
+        </div>
+
+        <div class="col-xs-12 col-sm-12 col-md-8">
+          <div class="hero__text-content">
+            <h4 class="hero__top-text">Introducing</h4>
+            <h1 class="hero__middle-text">Clique</h1>
+            <h4 class="hero__bottom-text">The Social Media App</h4>
+          </div>
+        </div>
       </div>
 
     </div>
 
   </section>
 
-  <div class="container">
+  <!-- About -->
+  <section class="page-section page-section--baby-powder" id="about" data-matching-link="about-link">
 
-    <!-- About -->
-    <section class="page-section" id="about" data-matching-link="about-link">
-
+    <div class="container">
       <div class="grid">
         <div class="col-sm-12 col-md-6">
           <div class="about">
@@ -82,20 +89,23 @@
       <div class="grid">
         <div class="col-sm-12 col-md-6">
           <img src="assets/images/message.png" alt="screenshot of a clique user' messages" class="flex-img">
-
         </div>
 
         <div class="col-sm-12 col-md-6">
           <div class="about">
-            <h2>Join The Network <br> With Over a Million Users</h2>
+            <h2 class="heading">Join The Network <br> With Over a Million Users</h2>
             <p class="generic-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris posuere urna dapibus, laoreet nisi vitae, faucibus nisl. Aliquam porta est quis ipsum venenatis bibendum. Morbi vestibulum sapien non nulla rutrum scelerisque.</p>
           </div>
         </div>
       </div>
-    </section>
+    </div>
 
-    <!-- Features-->
-    <section class="page-section" id="features" data-matching-link="features-link">
+  </section>
+
+  <!-- Features-->
+  <section class="page-section page-section--white-smoke" id="features" data-matching-link="features-link">
+
+    <div class="container">
       <h2 class="heading">App Features</h2>
       <p class="generic-content">Nullam tempus ornare libero, efficitur feugiat ipsum tempus nec. Aliquam ultrices lorem mollis, luctus sapien non, fermentum turpis. </p>
 
@@ -134,13 +144,14 @@
           </div>
 
         </div>
-
       </div>
+    </div>
+  </section>
 
-    </section>
+  <!-- Screenshot -->
+  <section class="page-section page-section--baby-powder" id="screnshot" data-matching-link="screenshot-link">
 
-    <!-- Screenshot -->
-    <section class="page-section" id="screnshot" data-matching-link="screenshot-link">
+    <div class="container">
       <h2 class="heading">ScreenShots</h2>
 
       <div class="grid">
@@ -174,12 +185,15 @@
         </div>
 
       </div>
+    </div>
 
-    </section>
 
-    <!-- OS Support -->
-    <section class="page-section" id="os" data-matching-link="support-link">
+  </section>
 
+  <!-- OS Support -->
+  <section class="page-section page-section--white-smoke" id="os" data-matching-link="support-link">
+
+    <div class="container">
       <h2 class="heading">Also Avaiable In Smart <br> Watch Version</h2>
 
       <div class="grid">
@@ -198,11 +212,15 @@
         </div>
 
       </div>
+    </div>
 
-    </section>
 
-    <!-- Reviews -->
-    <section class="page-section" id="review" data-matching-link="review-link">
+  </section>
+
+  <!-- Reviews -->
+  <section class="page-section page-section--baby-powder" id="review" data-matching-link="review-link">
+
+    <div class="container">
       <h2 class="heading">What Our Customers Say</h2>
 
       <div class="grid">
@@ -221,7 +239,7 @@
 
             <div class="carousel-cell">
               <div class="customer">
-              <img class="lazyload" sizes="160px" srcset="assets/images/customer-2.jpg 160w, assets/images/customer-2-hi-dpi.jpg 320w" alt="Chanell Myers">
+                <img class="lazyload" sizes="160px" srcset="assets/images/customer-2.jpg 160w, assets/images/customer-2-hi-dpi.jpg 320w" alt="Chanell Myers">
                 <h3 class="customer__name">Chanell Myers</h3>
                 <h4 class="customer__occupation">Student</h4>
                 <p class="generic-content">Nunc vel tellus tortor. Nunc consectetur eu magna nec aliquam. Nunc nulla diam, dignissim vitae venenatis ut, fringilla at tortor. Donec consectetur tellus quis arcu consectetur, eget vulputate sapien congue. </p>
@@ -268,11 +286,15 @@
         </div>
 
       </div>
+    </div>
 
-    </section>
 
-    <!-- Pricing Plans-->
-    <section class="page-section" id="price" data-matching-link="price-link">
+  </section>
+
+  <!-- Pricing Plans-->
+  <section class="page-section" id="price" data-matching-link="price-link">
+
+    <div class="container">
       <h2 class="heading">Our Pricing Plans</h2>
 
       <div class="grid">
@@ -307,16 +329,18 @@
           </div>
         </div>
       </div>
+    </div>
+  </section>
 
-    </section>
+  <!-- Contact -->
+  <section class="page-section page-section--baby-powder" id="contact" data-matching-link="contact-link">
 
-    <!-- Contact -->
-    <section class="page-section" id="contact" data-matching-link="contact-link">
+    <div class="container">
       <h2 class="heading">Got A Question</h2>
 
       <div class="grid">
         <div class="col-sm-12 col-md-4">
-          <p>Nunc vel tellus tortor. Nunc consectetur eu magna nec aliquam. Nunc nulla diam, dignissim vitae venenatis ut, fringilla at tortor. Donec consectetur tellus quis arcu consectetur.</p>
+          <p class="generic-content">Nunc vel tellus tortor. Nunc consectetur eu magna nec aliquam. Nunc nulla diam, dignissim vitae venenatis ut, fringilla at tortor. Donec consectetur tellus quis arcu consectetur.</p>
 
         </div>
 
@@ -331,12 +355,13 @@
           </div>
         </div>
       </div>
+    </div>
+  </section>
 
-    </section>
-
-    <footer>
-
+  <footer>
+    <div class="container">
       <h4 class="heading heading--newsletter">Subscribe To Our Newsletter</h4>
+
       <div class="grid">
         <div class="col-sm-12 col-md-4">
           <input type="text" placeholder="Name" class="form__input">
@@ -350,8 +375,8 @@
         </div>
       </div>
       <p>C.Coke 2018</p>
-    </footer>
-  </div>
+    </div>
+  </footer>
 
 
   <!-- <script src="/temp/scripts/app.js" type="text/javascript"></script> -->

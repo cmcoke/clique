@@ -1,6 +1,10 @@
-@import url('https://fonts.googleapis.com/css?family=Josefin+Sans|Kaushan+Script');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans|Kaushan+Script|Montserrat');
 @import "normalize.css";
 @import "reflex-grid";
 @import "base/_variables";
 @import "base/_mixins";
 @import "base/_global";
+@import "modules/_hero";
+@import "modules/_page-section";
+@import "modules/_heading";
+@import "modules/_generic-content";
