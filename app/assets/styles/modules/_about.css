@@ -1,0 +1,30 @@
+.about{
+
+  &__tp-margin{
+    margin-top: -11rem;
+
+    @mixin atExSmall{
+      margin-top: -4rem;
+    }
+
+    @mixin atSmall{
+      margin-top: -8rem;
+    }
+  }
+
+  & img {
+
+    @mixin atExSmall{
+      margin-top: -3rem;
+    }
+
+    @mixin atSmall{
+      margin-top: -6rem;
+    }
+
+    @mixin atMedium{
+      margin-top: -7rem;
+    }
+  }
+
+}
