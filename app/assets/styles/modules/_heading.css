@@ -22,8 +22,14 @@
     }
   }
 
+  &--center{
+    text-align: center;
+  }
+
   &--newsletter{
     font-size: 1.5rem;
   }
+
+
 
 }

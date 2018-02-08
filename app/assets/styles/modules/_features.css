@@ -1,0 +1,101 @@
+.features{
+
+  &__title{
+    font-family: $font-Montserrat;
+
+    @mixin atExSmall{
+      text-align: center;
+    }
+
+    @mixin atSmall{
+      text-align: center;
+    }
+
+    @mixin atMedium{
+      text-align: center;
+    }
+  }
+
+  &__phone-img {
+
+   @mixin atExSmall{
+     display: block;
+     margin-right: auto;
+     margin-left: auto;
+     margin-top: -4rem;
+   }
+
+   @mixin atSmall{
+     display: block;
+     margin-right: auto;
+     margin-left: auto;
+     margin-top: -4rem;
+   }
+
+   @mixin atMedium{
+     display: block;
+     margin-right: auto;
+     margin-left: auto;
+     margin-top: -4rem;
+   }
+  }
+
+  &__icon{
+
+    @mixin atExSmall{
+      display: block;
+      margin-right: auto;
+      margin-left: auto;
+    }
+
+    @mixin atSmall{
+      display: block;
+      margin-right: auto;
+      margin-left: auto;
+    }
+
+    @mixin atMedium{
+      display: block;
+      margin-right: auto;
+      margin-left: auto;
+    }
+
+    @mixin atLarge{
+      display: block;
+    }
+
+    @mixin atExLarge{
+      display: block;
+    }
+  }
+
+  &__type{
+
+    @mixin atExSmall{
+      margin-top: -7rem;
+      margin-bottom: 9rem;
+    }
+
+    @mixin atSmall{
+      margin-top: -6rem;
+      margin-bottom: 9rem;
+    }
+
+    @mixin atMedium{
+      margin-top: -6rem;
+      margin-bottom: 9rem;
+    }
+
+    @mixin atLarge{
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    @mixin atExLarge{
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+    }
+
+  }
+
+}

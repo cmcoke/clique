@@ -1592,10 +1592,14 @@ a{
   font-size: 1.9rem;
   color: #1C1D21;
 
+
+
 }
 @media(min-width: 576px) and (max-width: 767px){
 .heading{
     font-size: 2.875rem
+
+
 
 }
   }
@@ -1613,6 +1617,9 @@ a{
       font-size: 2.1875rem
   }
   }
+.heading--center{
+    text-align: center;
+  }
 .heading--newsletter{
     font-size: 1.5rem;
   }
@@ -1622,6 +1629,9 @@ a{
   font-size: 1.102rem;
   line-height: 1.85;
 }
+.generic-content--center{
+    text-align: center;
+  }
 .about__tp-margin{
     margin-top: -11rem;
   }
@@ -1649,4 +1659,152 @@ a{
 .about img {
       margin-top: -7rem
   }
+  }
+.features__title{
+    font-family: 'Montserrat', sans-serif;
+  }
+@media(max-width: 575px){
+.features__title{
+      text-align: center
+  }
+  }
+@media(min-width: 576px) and (max-width: 767px){
+.features__title{
+      text-align: center
+  }
+  }
+@media(min-width:768px) and (max-width: 991px){
+.features__title{
+      text-align: center
+  }
+  }
+@media(max-width: 575px){
+.features__phone-img {
+     display: block;
+     margin-right: auto;
+     margin-left: auto;
+     margin-top: -4rem
+  }
+  }
+@media(min-width: 576px) and (max-width: 767px){
+.features__phone-img {
+     display: block;
+     margin-right: auto;
+     margin-left: auto;
+     margin-top: -4rem
+  }
+  }
+@media(min-width:768px) and (max-width: 991px){
+.features__phone-img {
+     display: block;
+     margin-right: auto;
+     margin-left: auto;
+     margin-top: -4rem
+  }
+  }
+@media(max-width: 575px){
+.features__icon{
+      display: block;
+      margin-right: auto;
+      margin-left: auto
+  }
+  }
+@media(min-width: 576px) and (max-width: 767px){
+.features__icon{
+      display: block;
+      margin-right: auto;
+      margin-left: auto
+  }
+  }
+@media(min-width:768px) and (max-width: 991px){
+.features__icon{
+      display: block;
+      margin-right: auto;
+      margin-left: auto
+  }
+  }
+@media(min-width:992px) and (max-width: 1280px){
+.features__icon{
+      display: block
+  }
+  }
+@media(min-width:1281px){
+.features__icon{
+      display: block
+  }
+  }
+@media(max-width: 575px){
+.features__type{
+      margin-top: -7rem;
+      margin-bottom: 9rem
+
+  }
+  }
+@media(min-width: 576px) and (max-width: 767px){
+.features__type{
+      margin-top: -6rem;
+      margin-bottom: 9rem
+
+  }
+  }
+@media(min-width:768px) and (max-width: 991px){
+.features__type{
+      margin-top: -6rem;
+      margin-bottom: 9rem
+
+  }
+  }
+@media(min-width:992px) and (max-width: 1280px){
+.features__type{
+      margin-top: 2rem;
+      margin-bottom: 1rem
+
+  }
+  }
+@media(min-width:1281px){
+.features__type{
+      margin-top: 2rem;
+      margin-bottom: 1rem
+
+  }
+  }
+/* Do not edit modules/_sprite directly as it is generated automatically by Gulp.
+Instead edit gulp/templates/sprite */
+.icon{
+      background-image: url('/assets/images/sprites/sprite-0447c127.svg');
+    }
+.icon--chat{
+    width: 66.5px;
+    height: 66.5px;
+    background-position: 37.94882729211088% 79.81165919282512%;
+  }
+.icon--facebook{
+    width: 88.99px;
+    height: 88.99px;
+    background-position: 0 0;
+  }
+.icon--headphones{
+    width: 56.5px;
+    height: 66.5px;
+    background-position: 72.79345603271983% 0;
+  }
+.icon--instagram{
+    width: 88.99px;
+    height: 88.99px;
+    background-position: 41.974435168152446% 0;
+  }
+.icon--mail{
+    width: 66.5px;
+    height: 66.5px;
+    background-position: 99.99147121535181% 0;
+  }
+.icon--tools{
+    width: 66.5px;
+    height: 66.5px;
+    background-position: 99.99147121535181% 59.64125560538117%;
+  }
+.icon--twitter{
+    width: 88.99px;
+    height: 88.99px;
+    background-position: 0 99.97753061453768%;
   }

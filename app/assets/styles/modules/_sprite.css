@@ -1,0 +1,48 @@
+/* Do not edit modules/_sprite directly as it is generated automatically by Gulp.
+Instead edit gulp/templates/sprite */
+
+    .icon{
+      background-image: url('/assets/images/sprites/sprite-0447c127.svg');
+    }
+
+  .icon--chat{
+    width: 66.5px;
+    height: 66.5px;
+    background-position: 37.94882729211088% 79.81165919282512%;
+  }
+
+  .icon--facebook{
+    width: 88.99px;
+    height: 88.99px;
+    background-position: 0 0;
+  }
+
+  .icon--headphones{
+    width: 56.5px;
+    height: 66.5px;
+    background-position: 72.79345603271983% 0;
+  }
+
+  .icon--instagram{
+    width: 88.99px;
+    height: 88.99px;
+    background-position: 41.974435168152446% 0;
+  }
+
+  .icon--mail{
+    width: 66.5px;
+    height: 66.5px;
+    background-position: 99.99147121535181% 0;
+  }
+
+  .icon--tools{
+    width: 66.5px;
+    height: 66.5px;
+    background-position: 99.99147121535181% 59.64125560538117%;
+  }
+
+  .icon--twitter{
+    width: 88.99px;
+    height: 88.99px;
+    background-position: 0 99.97753061453768%;
+  }
