@@ -1,0 +1,16 @@
+.carousel{
+
+ &-cell{
+   width: 30%;
+   margin-right: 3rem;
+
+   @mixin atExSmall{
+     width: 100%;
+   }
+
+   @mixin atSmall{
+     width: 100%;
+   }
+ }
+
+}
