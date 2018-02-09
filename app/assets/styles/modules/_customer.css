@@ -1,0 +1,49 @@
+.customer{
+    background-color: #F7F7F7;
+    box-shadow: 4px 4px 30px -12px rgba(158,158,158,1);
+    padding: 0 18px 1px 18px;
+    margin-top: 8rem;
+    margin-bottom: 98px;
+
+    @mixin atMedium{
+      padding: 0 25px 38px 25px;
+    }
+
+    @mixin atLarge{
+      padding: 0 40px 38px 40px;
+    }
+
+    @mixin atExLarge{
+      padding: 0 32px 38px 32px;
+    }
+
+    &__img{
+      border-radius: 80px;
+      overflow: hidden;
+      width: 160px;
+      height: 160px;
+      margin: 0 auto -80px auto;
+      position: relative;
+      top: -80px;
+      border: 6px solid rgba(255, 255, 255, .8);
+    }
+
+    &__name, &__occupation{
+      text-align: center;
+      font-family: $font-Montserrat;
+    }
+
+    &__name{
+      font-size: 1.375rem;
+      font-weight: 400;
+      margin-bottom: 12px;
+    }
+
+    &__occupation{
+    font-size: 0.875rem;
+    font-weight: 500;
+    margin-top: 0.4375rem;
+    color: $terra;
+  }
+
+}
