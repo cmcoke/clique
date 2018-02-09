@@ -1934,3 +1934,41 @@ http://flickity.metafizzy.co
      width: 100%
  }
   }
+@media(max-width: 575px){
+.support__download {
+      text-align: center
+
+  }
+  }
+@media(min-width: 576px) and (max-width: 767px){
+.support__download {
+      text-align: center
+
+  }
+  }
+.support__download a{
+    display: inline-block;
+    margin-bottom: 2.0625rem;
+    margin-top: 1.125rem;
+    margin-right: 1.375rem;
+  }
+@media(min-width:992px) and (max-width: 1280px){
+.support__watch-img{
+      margin-top: -1.1875rem;
+      margin-bottom: -1.375rem
+
+  }
+  }
+@media(min-width:1281px){
+.support__watch-img{
+      margin-top: -1.25rem;
+      margin-bottom: -1.375rem
+
+  }
+  }
+@media(min-width:1281px){
+.support__content{
+      margin-top: 7.5rem
+
+  }
+  }

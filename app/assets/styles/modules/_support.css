@@ -1,0 +1,44 @@
+.support{
+
+  &__download {
+
+    @mixin atExSmall{
+      text-align: center;
+    }
+
+    @mixin atSmall{
+      text-align: center;
+    }
+
+  }
+
+  &__download a{
+    display: inline-block;
+    margin-bottom: 2.0625rem;
+    margin-top: 1.125rem;
+    margin-right: 1.375rem;
+  }
+
+  &__watch-img{
+
+    @mixin atLarge{
+      margin-top: -1.1875rem;
+      margin-bottom: -1.375rem;
+    }
+
+    @mixin atExLarge{
+      margin-top: -1.25rem;
+      margin-bottom: -1.375rem;
+    }
+
+  }
+
+  &__content{
+    
+    @mixin atExLarge{
+      margin-top: 7.5rem;
+    }
+
+  }
+
+}
