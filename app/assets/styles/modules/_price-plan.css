@@ -1,0 +1,57 @@
+.price-plan{
+  border: 1px solid #EAEAEA;
+  text-align: center;
+  padding-bottom: 60px;
+  transition: .3s;
+
+  &:hover{
+    box-shadow: 0 0.25rem 0.5rem 0 rgba(0,0,0,0.2);
+  }
+
+  &:hover a{
+    background-color: #fff;
+    color: $terra;
+    border: 1px solid $terra;
+  }
+
+  &__type, &__cost, &__features{
+    font-family: $font-Montserrat;
+    text-transform: uppercase;
+    font-weight: lighter;
+    color: $black5;
+  }
+
+  & span{
+    font-weight: bold;
+  }
+
+  &__type{
+    font-size:20px;
+    margin-bottom: 0;
+  }
+
+  &__cost{
+    font-size: 40px;
+    margin-top: 7px;
+  }
+
+  &__dollar{
+    vertical-align:60%;
+    margin-right: 3px;
+    font-size: 18px;
+  }
+
+  &__month{
+    font-size: 15px;
+  }
+
+  &__features{
+    margin-right: 40px;
+  }
+
+  &__features li{
+    padding-bottom: 33px;
+  }
+
+
+}

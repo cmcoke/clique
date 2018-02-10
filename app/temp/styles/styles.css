@@ -1585,6 +1585,9 @@ a{
 .page-section--black{
     background-color: #141414;
   }
+.page-section--lightGray{
+    background-color: #D3D4D9;
+  }
 .heading{
 
   font-family: 'Josefin Sans', sans-serif;
@@ -2023,4 +2026,68 @@ http://flickity.metafizzy.co
     font-weight: 500;
     margin-top: 0.4375rem;
     color: #E26D5A;
+  }
+.price-plan{
+  border: 1px solid #EAEAEA;
+  text-align: center;
+  padding-bottom: 60px;
+  -webkit-transition: .3s;
+  transition: .3s;
+
+
+}
+.price-plan:hover{
+    -webkit-box-shadow: 0 0.25rem 0.5rem 0 rgba(0,0,0,0.2);
+            box-shadow: 0 0.25rem 0.5rem 0 rgba(0,0,0,0.2);
+  }
+.price-plan:hover a{
+    background-color: #fff;
+    color: #E26D5A;
+    border: 1px solid #E26D5A;
+  }
+.price-plan__type, .price-plan__cost, .price-plan__features{
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-weight: lighter;
+    color: #222328;
+  }
+.price-plan span{
+    font-weight: bold;
+  }
+.price-plan__type{
+    font-size:20px;
+    margin-bottom: 0;
+  }
+.price-plan__cost{
+    font-size: 40px;
+    margin-top: 7px;
+  }
+.price-plan__dollar{
+    vertical-align:60%;
+    margin-right: 3px;
+    font-size: 18px;
+  }
+.price-plan__month{
+    font-size: 15px;
+  }
+.price-plan__features{
+    margin-right: 40px;
+  }
+.price-plan__features li{
+    padding-bottom: 33px;
+  }
+.btn{
+  background-color: #E26D5A;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: 'Josefin Sans', sans-serif;
+  padding: .75rem 1.2rem;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+/* display: inline-block; */
+.btn--price-plan{
+    margin-top: 43px;
+    margin-bottom: 33px;
+
   }

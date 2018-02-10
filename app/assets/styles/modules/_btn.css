@@ -1,0 +1,15 @@
+.btn{
+  background-color: $terra;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: $font-Josefin;
+  padding: .75rem 1.2rem;
+  transition: .3s;
+  /* display: inline-block; */
+
+  &--price-plan{
+    margin-top: 43px;
+    margin-bottom: 33px;
+
+  }
+}

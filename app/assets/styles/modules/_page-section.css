@@ -26,4 +26,8 @@
     background-color: $black6;
   }
 
+  &--lightGray{
+    background-color: $lightGray;
+  }
+
 }
