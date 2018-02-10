@@ -2089,5 +2089,48 @@ http://flickity.metafizzy.co
 .btn--price-plan{
     margin-top: 43px;
     margin-bottom: 33px;
-
+  }
+.btn--submit{
+    border: none;
+    width: 100%;
+    background-color: #EB907A;
+    cursor: pointer;
+  }
+@media(min-width:1281px){
+.btn--submit{
+      width: 20%
+  }
+  }
+.btn--submit:hover{
+      background-color: #E26D5A;
+    }
+.form__input{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #EAEAEA;
+  }
+@media(min-width:1281px){
+.form__input{
+      width: 90%
+  }
+  }
+.form textarea{
+    border: 1px solid #EAEAEA;
+    width: 100%;
+    resize: vertical;
+    margin-bottom: 20px;
+  }
+@media(min-width:1281px){
+.form textarea{
+      width: 90%
+  }
+  }
+.form input[type=text], .form input[type=email], .form textarea{
+    font-family: 'Montserrat', sans-serif;
+  }
+.form input[type=text]:focus, .form input[type=email]:focus, .form textarea:focus{
+    border-color: #EB907A;
+    -webkit-transition: .3s;
+    transition: .3s;
   }

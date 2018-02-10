@@ -10,6 +10,20 @@
   &--price-plan{
     margin-top: 43px;
     margin-bottom: 33px;
+  }
 
+  &--submit{
+    border: none;
+    width: 100%;
+    background-color: #EB907A;
+    cursor: pointer;
+
+    @mixin atExLarge{
+      width: 20%;
+    }
+
+    &:hover{
+      background-color: $terra;
+    }
   }
 }

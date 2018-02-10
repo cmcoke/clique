@@ -1,0 +1,35 @@
+.form{
+
+  &__input{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #EAEAEA;
+
+    @mixin atExLarge{
+      width: 90%;
+    }
+  }
+
+  & textarea{
+    border: 1px solid #EAEAEA;
+    width: 100%;
+    resize: vertical;
+    margin-bottom: 20px;
+
+    @mixin atExLarge{
+      width: 90%;
+    }
+  }
+
+  & input[type=text], & input[type=email], & textarea{
+    font-family: $font-Montserrat;
+  }
+
+  & input[type=text]:focus, & input[type=email]:focus, & textarea:focus{
+    border-color: #EB907A;
+    transition: .3s;
+  }
+
+
+}
