@@ -8,8 +8,8 @@
   /* display: inline-block; */
 
   &--price-plan{
-    margin-top: 43px;
-    margin-bottom: 33px;
+    margin-top: 2.6875rem;
+    margin-bottom: 2.0625rem;
   }
 
   &--submit{
@@ -17,6 +17,7 @@
     width: 100%;
     background-color: #EB907A;
     cursor: pointer;
+
 
     @mixin atExLarge{
       width: 20%;
@@ -26,4 +27,23 @@
       background-color: $terra;
     }
   }
+
+  &--footer{
+    width: 100%;
+
+    @mixin atMedium{
+      width: 20%;
+    }
+
+    @mixin atLarge{
+      width: 20%;
+    }
+
+    @mixin atExLarge{
+      width: 20%;
+    }
+
+
+  }
+
 }

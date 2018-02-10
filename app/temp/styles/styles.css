@@ -1583,7 +1583,7 @@ a{
     background-color: #F4F4F4;
   }
 .page-section--black{
-    background-color: #141414;
+    background-color: #1B1B1C;
   }
 .page-section--lightGray{
     background-color: #D3D4D9;
@@ -1596,12 +1596,10 @@ a{
   color: #1C1D21;
 
 
-
 }
 @media(min-width: 576px) and (max-width: 767px){
 .heading{
     font-size: 2.875rem
-
 
 
 }
@@ -1628,6 +1626,21 @@ a{
   }
 .heading--baby-powder{
     color: #FCFCFC;
+  }
+.heading--follow-us{
+    font-size: 1.5rem;
+  }
+@media(min-width:992px) and (max-width: 1280px){
+.heading--follow-us{
+      margin-top: 1.8125rem;
+      margin-bottom: 1.375rem
+  }
+  }
+@media(min-width:1281px){
+.heading--follow-us{
+      margin-top: 1.8125rem;
+      margin-bottom: 1.375rem
+  }
   }
 .generic-content{
   color: #222328;
@@ -1777,42 +1790,42 @@ a{
 /* Do not edit modules/_sprite directly as it is generated automatically by Gulp.
 Instead edit gulp/templates/sprite */
 .icon{
-      background-image: url('/assets/images/sprites/sprite-0447c127.svg');
+      background-image: url('/assets/images/sprites/sprite-2230360b.svg');
     }
 .icon--chat{
     width: 66.5px;
     height: 66.5px;
-    background-position: 37.94882729211088% 79.81165919282512%;
+    background-position: 0 0;
   }
 .icon--facebook{
-    width: 88.99px;
-    height: 88.99px;
-    background-position: 0 0;
+    width: 53.3px;
+    height: 53.3px;
+    background-position: 48.646671543525976% 49.73821989528796%;
   }
 .icon--headphones{
     width: 56.5px;
     height: 66.5px;
-    background-position: 72.79345603271983% 0;
+    background-position: 49.81273408239701% 0;
   }
 .icon--instagram{
-    width: 88.99px;
-    height: 88.99px;
-    background-position: 41.974435168152446% 0;
+    width: 53.3px;
+    height: 53.3px;
+    background-position: 87.63716166788589% 49.73821989528796%;
   }
 .icon--mail{
     width: 66.5px;
     height: 66.5px;
-    background-position: 99.99147121535181% 0;
+    background-position: 99.59514170040485% 0;
   }
 .icon--tools{
     width: 66.5px;
     height: 66.5px;
-    background-position: 99.99147121535181% 59.64125560538117%;
+    background-position: 0 55.18672199170125%;
   }
 .icon--twitter{
-    width: 88.99px;
-    height: 88.99px;
-    background-position: 0 99.97753061453768%;
+    width: 53.3px;
+    height: 53.3px;
+    background-position: 0 99.47643979057592%;
   }
 /*! Flickity v2.0.10
 http://flickity.metafizzy.co
@@ -2084,11 +2097,12 @@ http://flickity.metafizzy.co
   padding: .75rem 1.2rem;
   -webkit-transition: .3s;
   transition: .3s;
+
 }
 /* display: inline-block; */
 .btn--price-plan{
-    margin-top: 43px;
-    margin-bottom: 33px;
+    margin-top: 2.6875rem;
+    margin-bottom: 2.0625rem;
   }
 .btn--submit{
     border: none;
@@ -2104,6 +2118,32 @@ http://flickity.metafizzy.co
 .btn--submit:hover{
       background-color: #E26D5A;
     }
+.btn--footer{
+    width: 100%;
+
+
+  }
+@media(min-width:768px) and (max-width: 991px){
+.btn--footer{
+      width: 20%
+
+
+  }
+  }
+@media(min-width:992px) and (max-width: 1280px){
+.btn--footer{
+      width: 20%
+
+
+  }
+  }
+@media(min-width:1281px){
+.btn--footer{
+      width: 20%
+
+
+  }
+  }
 .form__input{
     width: 100%;
     padding: 10px;
@@ -2133,4 +2173,37 @@ http://flickity.metafizzy.co
     border-color: #EB907A;
     -webkit-transition: .3s;
     transition: .3s;
+  }
+.form__input--footer{
+    width: 100%;
+  }
+@media(min-width:768px) and (max-width: 991px){
+.form__input--footer{
+      width: 50%;
+      margin-right: 1.0625rem
+  }
+  }
+@media(min-width:992px) and (max-width: 1280px){
+.form__input--footer{
+      width: 40%;
+      margin-right: 1.0625rem
+  }
+  }
+@media(min-width:1281px){
+.form__input--footer{
+      width: 40%;
+      margin-right: 1.0625rem
+  }
+  }
+.site-footer__icon {
+    display: inline-block;
+    margin-right: 1.125rem;
+    margin-top: 0;
+  }
+.site-footer p {
+    color: #FCFCFC;
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 0.75rem;
   }

@@ -31,5 +31,23 @@
     transition: .3s;
   }
 
+  &__input--footer{
+    width: 100%;
+
+    @mixin atMedium{
+      width: 50%;
+      margin-right: 1.0625rem;
+    }
+
+    @mixin atLarge{
+      width: 40%;
+      margin-right: 1.0625rem;
+    }
+
+    @mixin atExLarge{
+      width: 40%;
+      margin-right: 1.0625rem;
+    }
+  }
 
 }

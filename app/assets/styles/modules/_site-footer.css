@@ -1,0 +1,16 @@
+.site-footer {
+  &__icon {
+    display: inline-block;
+    margin-right: 1.125rem;
+    margin-top: 0;
+  }
+
+  p {
+    color: $babyPowder;
+    font-family: $font-Josefin;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 0.75rem;
+  }
+
+}
