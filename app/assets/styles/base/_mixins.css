@@ -32,3 +32,10 @@
     @mixin-content;
   }
 }
+
+/* Mobile Menu */
+@define-mixin atMobileMenu{
+  @media(max-width: 800px){
+    @mixin-content;
+  }
+}

@@ -12,30 +12,36 @@
 
 <body>
 
+  <!-- Site Header  -->
   <header class="site-header">
 
-    <!-- Mobile Menu Toggle-->
-    <div class="site-header__menu-icon">
-      <div class="site-header__menu-icon__middle"></div>
-    </div>
+    <div class="overlay">
 
-    <nav class="navigation">
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about" id="about">About</a></li>
-        <li><a href="#features" id="features">Features</a></li>
-        <li><a href="#screenshot" id="screnshot">Screenshot</a></li>
-        <li><a href="#os" id="os">Supported OS</a></li>
-        <li><a href="#review" id="review">Review</a></li>
-        <li><a href="#price" id="price">Pricing</a></li>
-        <li><a href="#contact" id="contact">Contact</a></li>
-      </ul>
-    </nav>
+      <nav class="menu">
+        <ul>
+          <li><a href="#home" id="home-link">Home</a></li>
+          <li><a href="#about" id="about-link">About</a></li>
+          <li><a href="#features" id="features-link">Features</a></li>
+          <li><a href="#screenshot" id="screenshot-link">Screenshot</a></li>
+          <li>Clique</li>
+          <li><a href="#os" id="os-link">Supported OS</a></li>
+          <li><a href="#review" id="review-link">Review</a></li>
+          <li><a href="#price" id="price-link">Pricing</a></li>
+          <li><a href="#contact" id="contact-link">Contact</a></li>
+        </ul>
+      </nav>
+
+    </div>
 
   </header>
 
+  <!-- Mobile Menu Toggle-->
+  <div class="site-header__menu-toggle">
+    <div class="site-header__menu-hamburger"></div>
+  </div>
+
   <!-- Hero -->
-  <section class="hero" id="home" data-matching-link="home-link">
+  <section class="hero active" id="home" data-matching-link="#home-link">
 
     <picture>
       <source>
@@ -70,7 +76,7 @@
   </section>
 
   <!-- About -->
-  <section class="page-section page-section--baby-powder" id="about" data-matching-link="about-link">
+  <section class="page-section page-section--baby-powder active" id="about" data-matching-link="#about-link">
 
     <div class="container about">
       <div class="grid align-center">
@@ -101,7 +107,7 @@
   </section>
 
   <!-- Features-->
-  <section class="page-section page-section--white-smoke" id="features" data-matching-link="features-link">
+  <section class="page-section page-section--white-smoke active" id="features" data-matching-link="#features-link">
 
     <div class="container">
 
@@ -162,7 +168,7 @@
   </section>
 
   <!-- Screenshot -->
-  <section class="page-section page-section--black" id="screnshot" data-matching-link="screenshot-link">
+  <section class="page-section page-section--black active" id="screenshot" data-matching-link="#screenshot-link">
 
     <div class="container">
 
@@ -201,7 +207,7 @@
   </section>
 
   <!-- OS Support -->
-  <section class="page-section page-section--white-smoke" id="os" data-matching-link="support-link">
+  <section class="page-section page-section--white-smoke active" id="os" data-matching-link="#os-link">
 
     <div class="container">
 
@@ -232,7 +238,7 @@
   </section>
 
   <!-- Reviews -->
-  <section class="page-section page-section--baby-powder" id="review" data-matching-link="review-link">
+  <section class="page-section page-section--baby-powder active" id="review" data-matching-link="#review-link">
 
     <div class="container">
       <h2 class="heading heading--center">What Our Customers Say</h2>
@@ -312,7 +318,7 @@
   </section>
 
   <!-- Pricing Plans-->
-  <section class="page-section" id="price" data-matching-link="price-link">
+  <section class="page-section active" id="price" data-matching-link="#price-link">
 
     <div class="container">
       <h2 class="heading heading--center">Our Pricing Plans</h2>
@@ -341,10 +347,10 @@
               <h4 class="price-plan__type"><span>Advanced</span> Plan</h4>
               <h2 class="price-plan__cost"><span class="price-plan__dollar">$</span>50<span class="price-plan__month">/month</span></h2>
               <ul class="price-plan__features">
-                <li><span>Lorem</span> ipsum dolor sit amet</li>
-                <li><span>Sed</span> dignissim tortor eget</li>
-                <li><span>Mauris</span> porta erat eu nisi</li>
-                <li><span>Cras</span> tincidunt cursus</li>
+                <li><span>Lorem</span> dolor</li>
+                <li><span>Sed</span> dignissim</li>
+                <li><span>Mauris</span> porta </li>
+                <li><span>Cras</span> tincidunt</li>
               </ul>
               <a href="#" class="btn btn--price-plan">Choose Plan</a>
             </div>
@@ -357,10 +363,10 @@
               <h4 class="price-plan__type"><span>Premium</span> Plan</h4>
               <h2 class="price-plan__cost"><span class="price-plan__dollar">$</span>100<span class="price-plan__month">/month</span></h2>
               <ul class="price-plan__features">
-                <li><span>Lorem</span> ipsum dolor sit amet</li>
-                <li><span>Sed</span> dignissim tortor eget</li>
-                <li><span>Mauris</span>porta erat eu nisi</li>
-                <li><span>Cras</span> tincidunt cursus</li>
+                <li><span>Lorem</span> dolor</li>
+                <li><span>Sed</span> dignissim</li>
+                <li><span>Mauris</span> porta </li>
+                <li><span>Cras</span> tincidunt</li>
               </ul>
               <a href="#" class="btn btn--price-plan">Choose Plan</a>
             </div>
@@ -371,7 +377,7 @@
   </section>
 
   <!-- Contact -->
-  <section class="page-section page-section--baby-powder" id="contact" data-matching-link="contact-link">
+  <section class="page-section page-section--baby-powder active" id="contact" data-matching-link="#contact-link">
 
     <div class="container">
       <h2 class="heading heading--center">Got A Question</h2>
@@ -417,7 +423,7 @@
         </div>
 
         <div class="col-sm-12 flex-footer">
-            <p>C.Coke 2018</p>
+          <p>C.Coke 2018</p>
         </div>
       </div>
 

@@ -1453,6 +1453,7 @@ template {
 /* Medium devices (tablets, 768px and up) */
 /* Large devices (desktops, 992px and up) */
 /* Extra large devices (large desktops, 1200px and up) */
+/* Mobile Menu */
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -2206,4 +2207,200 @@ http://flickity.metafizzy.co
     text-transform: uppercase;
     text-align: center;
     font-size: 0.75rem;
+  }
+.site-header{
+
+  /* Desktop View */
+  position: fixed;
+  width:100%;
+  z-index:2;
+  background-color: rgba(255,255,255,10);
+  border-bottom: 1px solid rgba(0, 0, 0, .15);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+/* Mobile View */
+@media(max-width: 800px){
+.site-header{
+    position: absolute;
+    z-index: 2;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+   .site-header__menu-toggle{
+     display: block;
+     padding: 1em;
+     position: fixed;
+     right: -3px;
+     top:3px;
+     z-index: 3;
+     cursor: pointer;
+   }
+
+   .site-header__menu-hamburger,  .site-header__menu-hamburger::before,  .site-header__menu-hamburger::after{
+     content: '';
+     display: block;
+     width: 2em;
+     height: 3px;
+     background: #E26D5A;
+     -webkit-transition: all ease-in-out 250ms;
+     transition: all ease-in-out 250ms;
+   }
+
+    .site-header__menu-hamburger::before{
+      -webkit-transform: translateY(-6px);
+              transform: translateY(-6px);
+    }
+
+    .site-header__menu-hamburger::after{
+      -webkit-transform: translateY(3px);
+              transform: translateY(3px);
+    }
+
+    .site-header__menu-hamburger.overlay--is-open{
+      -webkit-transform: rotate(45deg);
+              transform: rotate(45deg);
+
+    }
+
+      .site-header__menu-hamburger.overlay--is-open::after{
+        -webkit-transform: rotate(-90deg) translateX(3px);
+                transform: rotate(-90deg) translateX(3px);
+      }
+
+      .site-header__menu-hamburger.overlay--is-open::before{
+        opacity: 0;
+      }
+  }
+/* Mobile View */
+@media(max-width: 800px){
+    .menu ul{
+      padding: 0;
+      margin: 0;
+      height: 100vh;
+      display: -ms-flex;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+      text-align: center;
+    }
+
+    .menu li{
+      -webkit-box-flex: 1;
+          -ms-flex: 1 1 auto;
+              flex: 1 1 auto;
+      border-bottom: 1px solid rgba(0, 0, 0, .15);
+      display: -ms-flex;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+    }
+
+    .menu a{
+      color: #1C1D21;
+      text-transform: uppercase;
+      font-family: 'Montserrat', sans-serif;
+      display: -ms-flex;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -ms-flex-preferred-size: 100%;
+          flex-basis: 100%;
+    }
+
+    .menu a:hover{
+      background: rgba(226,109,90, .55);
+      color: #fff;
+    }
+
+    .menu li:nth-child(5){
+      display: none;
+    }
+  }
+/* Desktop View */
+.menu ul{
+    display: -ms-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+
+  }
+.menu a{
+    color:#0A0A0A;
+  }
+.menu a.is-current-link{
+      color:#E26D5A;
+    }
+.menu li:nth-child(5){
+    font-size: 2.5rem;
+    margin-top: -15px;
+  }
+@media(max-width: 800px){
+.overlay{
+    position: fixed;
+    width: 100%;
+    bottom:100%;
+    right: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.9);
+    overflow: hidden;
+    -webkit-transition: all ease-in-out 250ms;
+    transition: all ease-in-out 250ms
+
+}
+
+    .overlay--is-open{
+      bottom: 0;
+    }
   }
