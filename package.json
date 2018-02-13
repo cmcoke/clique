@@ -2,6 +2,7 @@
   "name": "clique",
   "version": "1.0.0",
   "dependencies": {
+    "animate.css": "^3.6.1",
     "flickity": "^2.0.10",
     "flickity-imagesloaded": "^2.0.0",
     "jquery": "3.2.1",

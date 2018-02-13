@@ -4,10 +4,18 @@ import smoothScroll from 'jquery-smooth-scroll';
 
 class FixedHeader {
   constructor() {
+    this.lazyImages = $(".lazyload");
     this.activeSection = $(".active");
     this.headerLinks = $(".menu a");
     this.activeSectionWaypoints();
     this.addSmoothScrolling();
+    this.refreashWaypoint();
+  }
+
+  refreashWaypoint() {
+    this.lazyImages.on("load", function() {
+      Waypoint.refreshAll();
+    });
   }
 
   addSmoothScrolling() {

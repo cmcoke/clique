@@ -55,7 +55,7 @@
 
       <div class="grid align-center">
 
-        <div class="hero__hidden col-md-4">
+        <div class="hero__hidden col-md-4 animated fadeInLeft">
           <picture>
             <source srcset="assets/images/hero--phone-large.png" media="(min-width: 1708px)">
             <img src="assets/images/hero--phone-medium.png" media="(max-width: 1366px)" alt="clique splash screen on iphone">
@@ -63,7 +63,7 @@
         </div>
 
         <div class="col-xs-12 col-sm-12 col-md-8">
-          <div class="hero__text-content">
+          <div class="hero__text-content animated fadeIn">
             <h4 class="hero__top-text">Introducing</h4>
             <h1 class="hero__middle-text">Clique</h1>
             <h4 class="hero__bottom-text">The Social Media App</h4>
@@ -81,24 +81,32 @@
     <div class="container about">
       <div class="grid align-center">
         <div class="col-sm-12 col-md-6">
-          <h2 class="heading heading--about">Connect and Share <br> With Friends</h2>
-          <p class="generic-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris posuere urna dapibus, laoreet nisi vitae, faucibus nisl. Aliquam porta est quis ipsum venenatis bibendum. Morbi vestibulum sapien non nulla rutrum scelerisque.</p>
+          <div class="animated  about-text">
+            <h2 class="heading heading--about">Connect and Share <br> With Friends</h2>
+            <p class="generic-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris posuere urna dapibus, laoreet nisi vitae, faucibus nisl. Aliquam porta est quis ipsum venenatis bibendum. Morbi vestibulum sapien non nulla rutrum scelerisque.</p>
+          </div>
         </div>
 
         <div class="col-sm-12 col-md-6">
-          <img src="assets/images/profile.png" alt="screenshot of a clique user' profile" class="flex-img">
+          <div class="animated about-profile">
+            <img class="lazyload" data-srcset="assets/images/profile.png" alt="screenshot of a clique user' profile" class="flex-img">
+          </div>
         </div>
       </div>
 
       <div class="grid align-center  about__tp-margin">
 
         <div class=" col-sm-12 col-md-6 order-2 order-1-md">
-          <img src="assets/images/message.png" alt="screenshot of a clique user' messages" class="flex-img">
+          <div class="animated about-message">
+            <img class="lazyload" data-srcset="assets/images/message.png" alt="screenshot of a clique user' messages" class="flex-img">
+          </div>
         </div>
 
         <div class="col-sm-12 col-md-6 order-1 order-2-md">
-          <h2 class="heading heading--about">Join The Network <br> With Over a Million Users</h2>
-          <p class="generic-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris posuere urna dapibus, laoreet nisi vitae, faucibus nisl. Aliquam porta est quis ipsum venenatis bibendum. Morbi vestibulum sapien non nulla rutrum scelerisque.</p>
+          <div class="animated about-text">
+            <h2 class="heading heading--about">Join The Network <br> With Over a Million Users</h2>
+            <p class="generic-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris posuere urna dapibus, laoreet nisi vitae, faucibus nisl. Aliquam porta est quis ipsum venenatis bibendum. Morbi vestibulum sapien non nulla rutrum scelerisque.</p>
+          </div>
         </div>
 
       </div>
@@ -117,7 +125,7 @@
       <div class="grid">
 
         <div class="col-xs-12 col-md-3">
-          <img src="assets/images/features.png" alt="front facing phone showing the clique app" class="features__phone-img">
+          <img class="lazyload animated features__img" data-srcset="assets/images/features.png" alt="front facing phone showing the clique app" class="features__phone-img">
         </div>
 
         <div class="col-xs-12 col-md-9">
@@ -126,7 +134,7 @@
 
             <div class="grid">
               <div class="col-xs-12 col-md-6">
-                <div class="features__type">
+                <div class="features__type animated">
                   <span class="icon icon--mail features__icon"></span>
                   <h3 class="features__title">Gmail and Outlook Integration</h3>
                   <p class="generic-content">Phasellus non ex orci. Suspendisse venenatis odio at porttitor cursus. Suspendisse posuere consectetur est quis faucibus. Nam vitae lorem vitae magna iaculis fermentum. Suspendisse egestas libero ac pharetra convallis. </p>
@@ -134,7 +142,7 @@
               </div>
 
               <div class="col-xs-12 col-md-6">
-                <div class="features__type">
+                <div class="features__type animated">
                   <span class="icon icon--chat features__icon"></span>
                   <h3 class="features__title">Encrypted Chat</h3>
                   <p class="generic-content">Phasellus non ex orci. Suspendisse venenatis odio at porttitor cursus. Suspendisse posuere consectetur est quis faucibus. Nam vitae lorem vitae magna iaculis fermentum. Suspendisse egestas libero ac pharetra convallis. </p>
@@ -144,7 +152,7 @@
 
             <div class="grid">
               <div class="col-xs-12 col-md-6">
-                <div class="features__type">
+                <div class="features__type animated">
                   <span class="icon icon--tools features__icon"></span>
                   <h3 class="features__title">App Customization</h3>
                   <p class="generic-content">Phasellus non ex orci. Suspendisse venenatis odio at porttitor cursus. Suspendisse posuere consectetur est quis faucibus. Nam vitae lorem vitae magna iaculis fermentum. Suspendisse egestas libero ac pharetra convallis. </p>
@@ -152,7 +160,7 @@
               </div>
 
               <div class="col-xs-12 col-md-6">
-                <div class="features__type">
+                <div class="features__type animated">
                   <span class="icon icon--headphones features__icon"></span>
                   <h3 class="features__title">24/7 Suppport</h3>
                   <p class="generic-content">Phasellus non ex orci. Suspendisse venenatis odio at porttitor cursus. Suspendisse posuere consectetur est quis faucibus. Nam vitae lorem vitae magna iaculis fermentum. Suspendisse egestas libero ac pharetra convallis. </p>
@@ -177,27 +185,27 @@
       <div class="carousel" data-flickity='{"cellAlign": "center", "contain": true, "wrapAround": true, "pageDots": false, "initialIndex": 1, "imagesLoaded": true}'>
 
         <div class="carousel-cell">
-          <img src="assets/images/login.jpg" alt="clique login screen">
+          <img srcset="assets/images/login.jpg" alt="clique login screen">
         </div>
 
         <div class="carousel-cell">
-          <img src="assets/images/news.jpg" alt="clique news screen">
+          <img srcset="assets/images/news.jpg" alt="clique news screen">
         </div>
 
         <div class="carousel-cell">
-          <img src="assets/images/news-detail.jpg" alt="clique news screen">
+          <img srcset="assets/images/news-detail.jpg" alt="clique news screen">
         </div>
 
         <div class="carousel-cell">
-          <img src="assets/images/music.jpg" alt="clique music screen">
+          <img srcset="assets/images/music.jpg" alt="clique music screen">
         </div>
 
         <div class="carousel-cell">
-          <img src="assets/images/call.jpg" alt="clique call screen">
+          <img srcset="assets/images/call.jpg" alt="clique call screen">
         </div>
 
         <div class="carousel-cell">
-          <img src="assets/images/photo.jpg" alt="clique photo screen">
+          <img srcset="assets/images/photo.jpg" alt="clique photo screen">
         </div>
 
       </div>
@@ -214,7 +222,7 @@
       <div class="grid support">
 
         <div class=" hidden-xxs hidden-xs hidden-sm col-sm-12 col-md-4 ">
-          <img src="assets/images/watch.png" alt="" class="support__watch-img">
+          <img class="lazyload" data-srcset="assets/images/watch.png" alt="" class="support__watch-img">
         </div>
 
         <div class="col-sm-12 col-md-8">
@@ -225,9 +233,9 @@
 
             <div class="support__download">
 
-              <a href="#"><img class="lazyload" sizes="256px" src="assets/images/google-badge-1.png" alt="google' download badge" class="flex-img"></a>
+              <a href="#"><img class="lazyload" sizes="256px" data-srcset="assets/images/google-badge-1.png" alt="google' download badge" class="flex-img"></a>
 
-              <a href="#"><img class="lazyload" sizes="256px" src="assets/images/apple-badge-2.png" alt="apple' download badge" class="flex-img"></a>
+              <a href="#"><img class="lazyload" sizes="256px" data-srcset="assets/images/apple-badge-2.png" alt="apple' download badge" class="flex-img"></a>
             </div>
           </div>
         </div>
@@ -248,7 +256,7 @@
         <div class="carousel-cell">
           <div class="customer">
             <div class="customer__img">
-              <img class="lazyload " sizes="160px" srcset="assets/images/customer-1.jpg 160w, assets/images/customer-1-hi-dpi.jpg 320w" alt="James Thompson">
+              <img class="lazyload " sizes="160px" data-srcset="assets/images/customer-1.jpg 160w, assets/images/customer-1-hi-dpi.jpg 320w" alt="James Thompson">
             </div>
             <h3 class="customer__name">James Thompson</h3>
             <h4 class="customer__occupation">Photographer</h4>
@@ -259,7 +267,7 @@
         <div class="carousel-cell">
           <div class="customer">
             <div class="customer__img">
-              <img class="lazyload" sizes="160px" srcset="assets/images/customer-2.jpg 160w, assets/images/customer-2-hi-dpi.jpg 320w" alt="Chanell Myers">
+              <img class="lazyload" sizes="160px" data-srcset="assets/images/customer-2.jpg 160w, assets/images/customer-2-hi-dpi.jpg 320w" alt="Chanell Myers">
             </div>
             <h3 class="customer__name">Chanell Myers</h3>
             <h4 class="customer__occupation">Student</h4>
@@ -270,7 +278,7 @@
         <div class="carousel-cell">
           <div class="customer">
             <div class="customer__img">
-              <img class="lazyload" sizes="160px" srcset="assets/images/customer-3.jpg 160w, assets/images/customer-3-hi-dpi.jpg 320w" alt="Steven Rose">
+              <img class="lazyload" sizes="160px" data-srcset="assets/images/customer-3.jpg 160w, assets/images/customer-3-hi-dpi.jpg 320w" alt="Steven Rose">
             </div>
             <h3 class="customer__name">Steven Rose</h3>
             <h4 class="customer__occupation">Accountant</h4>
@@ -281,7 +289,7 @@
         <div class="carousel-cell">
           <div class="customer">
             <div class="customer__img">
-              <img class="lazyload" sizes="160px" srcset="assets/images/customer-4.jpg 160w, assets/images/customer-4-hi-dpi.jpg 320w" alt="Diana Madison">
+              <img class="lazyload" sizes="160px" data-srcset="assets/images/customer-4.jpg 160w, assets/images/customer-4-hi-dpi.jpg 320w" alt="Diana Madison">
             </div>
             <h3 class="customer__name">Diana Madison</h3>
             <h4 class="customer__occupation">U/X Designers</h4>
@@ -292,7 +300,7 @@
         <div class="carousel-cell">
           <div class="customer">
             <div class="customer__img">
-              <img class="lazyload" sizes="160px" srcset="assets/images/customer-5.jpg 160w, assets/images/customer-5-hi-dpi.jpg 320w" alt="Kevin Peterson">
+              <img class="lazyload" sizes="160px" data-srcset="assets/images/customer-5.jpg 160w, assets/images/customer-5-hi-dpi.jpg 320w" alt="Kevin Peterson">
             </div>
             <h3 class="customer__name">Kevin Peterson</h3>
             <h4 class="customer__occupation">Front-End Developer</h4>
@@ -303,7 +311,7 @@
         <div class="carousel-cell">
           <div class="customer">
             <div class="customer__img">
-              <img class="lazyload" sizes="160px" srcset="assets/images/customer-6.jpg 160w, assets/images/customer-6-hi-dpi.jpg 320w" alt="Ashley Jones">
+              <img class="lazyload" sizes="160px" data-srcset="assets/images/customer-6.jpg 160w, assets/images/customer-6-hi-dpi.jpg 320w" alt="Ashley Jones">
             </div>
             <h3 class="customer__name">Ashley Jones</h3>
             <h4 class="customer__occupation">Blogger</h4>
@@ -326,7 +334,7 @@
       <div class="grid">
 
         <div class="col-sm-12 col-md-4">
-          <div class="price-plan">
+          <div class="price-plan animated">
             <div class="price-plan__content">
               <h4 class="price-plan__type"><span >Basic</span> Plan</h4>
               <h2 class="price-plan__cost">Free</h2>
@@ -342,7 +350,7 @@
         </div>
 
         <div class="col-sm-12 col-md-4">
-          <div class="price-plan">
+          <div class="price-plan animated">
             <div class="price-plan__content">
               <h4 class="price-plan__type"><span>Advanced</span> Plan</h4>
               <h2 class="price-plan__cost"><span class="price-plan__dollar">$</span>50<span class="price-plan__month">/month</span></h2>
@@ -358,7 +366,7 @@
         </div>
 
         <div class="col-sm-12 col-md-4">
-          <div class="price-plan">
+          <div class="price-plan animated">
             <div class="price-plan__content">
               <h4 class="price-plan__type"><span>Premium</span> Plan</h4>
               <h2 class="price-plan__cost"><span class="price-plan__dollar">$</span>100<span class="price-plan__month">/month</span></h2>

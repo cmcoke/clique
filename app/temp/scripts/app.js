@@ -60,14 +60,13 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 8);
+/******/ 	return __webpack_require__(__webpack_require__.s = 9);
 /******/ })
 /************************************************************************/
 /******/ ([
 /* 0 */,
 /* 1 */,
-/* 2 */,
-/* 3 */
+/* 2 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -10327,161 +10326,8 @@ return jQuery;
 
 
 /***/ }),
-/* 4 */,
-/* 5 */,
-/* 6 */,
-/* 7 */,
-/* 8 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var _MobileMenu = __webpack_require__(9);
-
-var _MobileMenu2 = _interopRequireDefault(_MobileMenu);
-
-var _FixedHeader = __webpack_require__(10);
-
-var _FixedHeader2 = _interopRequireDefault(_FixedHeader);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var mobileMenu = new _MobileMenu2.default();
-var fixedHeader = new _FixedHeader2.default();
-
-/***/ }),
-/* 9 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _jquery = __webpack_require__(3);
-
-var _jquery2 = _interopRequireDefault(_jquery);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-var MobileMenu = function () {
-  function MobileMenu() {
-    _classCallCheck(this, MobileMenu);
-
-    this.menuToggle = (0, _jquery2.default)(".site-header__menu-toggle");
-    this.overlayMenu = (0, _jquery2.default)(".overlay");
-    this.menuIcon = (0, _jquery2.default)(".site-header__menu-hamburger");
-    this.events();
-  }
-
-  _createClass(MobileMenu, [{
-    key: "events",
-    value: function events() {
-      this.menuToggle.click(this.toggleTheMenu.bind(this));
-    }
-  }, {
-    key: "toggleTheMenu",
-    value: function toggleTheMenu() {
-      this.overlayMenu.toggleClass("overlay--is-open");
-      this.menuIcon.toggleClass("overlay--is-open");
-    }
-  }]);
-
-  return MobileMenu;
-}();
-
-exports.default = MobileMenu;
-
-/***/ }),
-/* 10 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _jquery = __webpack_require__(3);
-
-var _jquery2 = _interopRequireDefault(_jquery);
-
-var _noframework = __webpack_require__(11);
-
-var _noframework2 = _interopRequireDefault(_noframework);
-
-var _jquerySmoothScroll = __webpack_require__(12);
-
-var _jquerySmoothScroll2 = _interopRequireDefault(_jquerySmoothScroll);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-var FixedHeader = function () {
-  function FixedHeader() {
-    _classCallCheck(this, FixedHeader);
-
-    this.activeSection = (0, _jquery2.default)(".active");
-    this.headerLinks = (0, _jquery2.default)(".menu a");
-    this.activeSectionWaypoints();
-    this.addSmoothScrolling();
-  }
-
-  _createClass(FixedHeader, [{
-    key: 'addSmoothScrolling',
-    value: function addSmoothScrolling() {
-      this.headerLinks.smoothScroll();
-    }
-  }, {
-    key: 'activeSectionWaypoints',
-    value: function activeSectionWaypoints() {
-      var that = this;
-      this.activeSection.each(function () {
-        var currentPageSection = this;
-        new Waypoint({
-          element: currentPageSection,
-          handler: function handler(direction) {
-            if (direction == "down") {
-              var matchingHeaderLink = currentPageSection.getAttribute("data-matching-link");
-              that.headerLinks.removeClass("is-current-link");
-              (0, _jquery2.default)(matchingHeaderLink).addClass("is-current-link");
-            }
-          },
-          offset: "11%"
-        });
-        new Waypoint({
-          element: currentPageSection,
-          handler: function handler(direction) {
-            if (direction == "up") {
-              var matchingHeaderLink = currentPageSection.getAttribute("data-matching-link");
-              that.headerLinks.removeClass("is-current-link");
-              (0, _jquery2.default)(matchingHeaderLink).addClass("is-current-link");
-            }
-          },
-          offset: "-11%"
-        });
-      });
-    }
-  }]);
-
-  return FixedHeader;
-}();
-
-exports.default = FixedHeader;
-
-/***/ }),
-/* 11 */
+/* 3 */,
+/* 4 */
 /***/ (function(module, exports) {
 
 /*!
@@ -11244,6 +11090,174 @@ https://github.com/imakewebthings/waypoints/blob/master/licenses.txt
 ;
 
 /***/ }),
+/* 5 */,
+/* 6 */,
+/* 7 */,
+/* 8 */,
+/* 9 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _MobileMenu = __webpack_require__(10);
+
+var _MobileMenu2 = _interopRequireDefault(_MobileMenu);
+
+var _FixedHeader = __webpack_require__(11);
+
+var _FixedHeader2 = _interopRequireDefault(_FixedHeader);
+
+var _Animate = __webpack_require__(13);
+
+var _Animate2 = _interopRequireDefault(_Animate);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var mobileMenu = new _MobileMenu2.default();
+var fixedHeader = new _FixedHeader2.default();
+var animate = new _Animate2.default();
+
+/***/ }),
+/* 10 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _jquery = __webpack_require__(2);
+
+var _jquery2 = _interopRequireDefault(_jquery);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+var MobileMenu = function () {
+  function MobileMenu() {
+    _classCallCheck(this, MobileMenu);
+
+    this.menuToggle = (0, _jquery2.default)(".site-header__menu-toggle");
+    this.overlayMenu = (0, _jquery2.default)(".overlay");
+    this.menuIcon = (0, _jquery2.default)(".site-header__menu-hamburger");
+    this.events();
+  }
+
+  _createClass(MobileMenu, [{
+    key: "events",
+    value: function events() {
+      this.menuToggle.click(this.toggleTheMenu.bind(this));
+    }
+  }, {
+    key: "toggleTheMenu",
+    value: function toggleTheMenu() {
+      this.overlayMenu.toggleClass("overlay--is-open");
+      this.menuIcon.toggleClass("overlay--is-open");
+    }
+  }]);
+
+  return MobileMenu;
+}();
+
+exports.default = MobileMenu;
+
+/***/ }),
+/* 11 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _jquery = __webpack_require__(2);
+
+var _jquery2 = _interopRequireDefault(_jquery);
+
+var _noframework = __webpack_require__(4);
+
+var _noframework2 = _interopRequireDefault(_noframework);
+
+var _jquerySmoothScroll = __webpack_require__(12);
+
+var _jquerySmoothScroll2 = _interopRequireDefault(_jquerySmoothScroll);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+var FixedHeader = function () {
+  function FixedHeader() {
+    _classCallCheck(this, FixedHeader);
+
+    this.lazyImages = (0, _jquery2.default)(".lazyload");
+    this.activeSection = (0, _jquery2.default)(".active");
+    this.headerLinks = (0, _jquery2.default)(".menu a");
+    this.activeSectionWaypoints();
+    this.addSmoothScrolling();
+    this.refreashWaypoint();
+  }
+
+  _createClass(FixedHeader, [{
+    key: 'refreashWaypoint',
+    value: function refreashWaypoint() {
+      this.lazyImages.on("load", function () {
+        Waypoint.refreshAll();
+      });
+    }
+  }, {
+    key: 'addSmoothScrolling',
+    value: function addSmoothScrolling() {
+      this.headerLinks.smoothScroll();
+    }
+  }, {
+    key: 'activeSectionWaypoints',
+    value: function activeSectionWaypoints() {
+      var that = this;
+      this.activeSection.each(function () {
+        var currentPageSection = this;
+        new Waypoint({
+          element: currentPageSection,
+          handler: function handler(direction) {
+            if (direction == "down") {
+              var matchingHeaderLink = currentPageSection.getAttribute("data-matching-link");
+              that.headerLinks.removeClass("is-current-link");
+              (0, _jquery2.default)(matchingHeaderLink).addClass("is-current-link");
+            }
+          },
+          offset: "11%"
+        });
+        new Waypoint({
+          element: currentPageSection,
+          handler: function handler(direction) {
+            if (direction == "up") {
+              var matchingHeaderLink = currentPageSection.getAttribute("data-matching-link");
+              that.headerLinks.removeClass("is-current-link");
+              (0, _jquery2.default)(matchingHeaderLink).addClass("is-current-link");
+            }
+          },
+          offset: "-11%"
+        });
+      });
+    }
+  }]);
+
+  return FixedHeader;
+}();
+
+exports.default = FixedHeader;
+
+/***/ }),
 /* 12 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -11257,7 +11271,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 (function(factory) {
   if (true) {
     // AMD. Register as an anonymous module.
-    !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(3)], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
+    !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(2)], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
 				__WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ?
 				(__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__),
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
@@ -11609,6 +11623,151 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 }));
 
 
+
+/***/ }),
+/* 13 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _jquery = __webpack_require__(2);
+
+var _jquery2 = _interopRequireDefault(_jquery);
+
+var _noframework = __webpack_require__(4);
+
+var _noframework2 = _interopRequireDefault(_noframework);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+var Animate = function () {
+  function Animate() {
+    _classCallCheck(this, Animate);
+
+    this.aboutText = (0, _jquery2.default)(".about-text");
+    this.aboutProfile = (0, _jquery2.default)(".about-profile");
+    this.aboutMessage = (0, _jquery2.default)(".about-message");
+    this.featuresType = (0, _jquery2.default)(".features__type");
+    this.featuresImg = (0, _jquery2.default)(".features__img");
+    this.pricePlan = (0, _jquery2.default)(".price-plan");
+    this.hideContent();
+    this.fadeInUp();
+    this.fadeInRight();
+    this.fadeInLeft();
+    this.slideInDown();
+    this.fadeIn();
+    this.PricePlaceFadeIn();
+  }
+
+  _createClass(Animate, [{
+    key: 'hideContent',
+    value: function hideContent() {
+      this.aboutText.addClass("reveal-item");
+      this.aboutProfile.addClass("reveal-item");
+      this.aboutMessage.addClass("reveal-item");
+      this.featuresType.addClass("reveal-item");
+      this.featuresImg.addClass("reveal-item");
+      this.pricePlan.addClass("reveal-item");
+    }
+  }, {
+    key: 'fadeInUp',
+    value: function fadeInUp() {
+      this.aboutText.each(function () {
+        var currentItem = this;
+        new Waypoint({
+          element: currentItem,
+          handler: function handler() {
+            (0, _jquery2.default)(currentItem).addClass("fadeInUp reveal-item--is-visible");
+          },
+          offset: "50%"
+        });
+      });
+    }
+  }, {
+    key: 'fadeInRight',
+    value: function fadeInRight() {
+      this.aboutProfile.each(function () {
+        var currentItem = this;
+        new Waypoint({
+          element: currentItem,
+          handler: function handler() {
+            (0, _jquery2.default)(currentItem).addClass("fadeInRight reveal-item--is-visible");
+          },
+          offset: "20%"
+        });
+      });
+    }
+  }, {
+    key: 'fadeInLeft',
+    value: function fadeInLeft() {
+      this.aboutMessage.each(function () {
+        var currentItem = this;
+        new Waypoint({
+          element: currentItem,
+          handler: function handler() {
+            (0, _jquery2.default)(currentItem).addClass("fadeInLeft reveal-item--is-visible");
+          },
+          offset: "20%"
+        });
+      });
+    }
+  }, {
+    key: 'slideInDown',
+    value: function slideInDown() {
+      this.featuresType.each(function () {
+        var currentItem = this;
+        new Waypoint({
+          element: currentItem,
+          handler: function handler() {
+            (0, _jquery2.default)(currentItem).addClass("slideInDown reveal-item--is-visible");
+          },
+          offset: "85%"
+        });
+      });
+    }
+  }, {
+    key: 'fadeIn',
+    value: function fadeIn() {
+      this.featuresImg.each(function () {
+        var currentItem = this;
+        new Waypoint({
+          element: currentItem,
+          handler: function handler() {
+            (0, _jquery2.default)(currentItem).addClass("fadeIn reveal-item--is-visible");
+          },
+          offset: "45%"
+        });
+      });
+    }
+  }, {
+    key: 'PricePlaceFadeIn',
+    value: function PricePlaceFadeIn() {
+      this.pricePlan.each(function () {
+        var currentItem = this;
+        new Waypoint({
+          element: currentItem,
+          handler: function handler() {
+            (0, _jquery2.default)(currentItem).addClass("fadeIn reveal-item--is-visible");
+          },
+          offset: "45%"
+        });
+      });
+    }
+  }]);
+
+  return Animate;
+}();
+
+exports.default = Animate;
 
 /***/ })
 /******/ ]);
